@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2015-03-12 17:52+0200\n"
+"PO-Revision-Date: 2015-03-12 17:52+0200\n"
+"Last-Translator: Seoringer <seoringer@gmail.com>\n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: X:\\home\\seoringer.com\\www\\wp-content\\plugins"
+"\\simple-voting\\core\n"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:155
+msgid "Your name:"
+msgstr "Ваше Имя"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:156
+msgid "Comments:"
+msgstr "Комментарии:"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:157
+msgid "Please rate:"
+msgstr "Пожалуйста, оцените:"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:158
+msgid "Rating"
+msgstr "Рейтинг"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:159
+msgid "votes"
+msgstr "голосов"
+
+#: X:\home\seoringer.com\www\wp-content\plugins\simple-voting\core/class-simple-voting-core.php:160
+msgid "out of"
+msgstr "из"

@@ -13,78 +13,99 @@ Simple voting and rating system. In simplest case you just need to insert in you
 == Description ==
 
 This plugin can understand two shortcodes: 
-
-* <strong>[voting]</strong>
-* <strong>[voted]</strong>
+* [voting]</strong>
+* [voted]</strong>
 
 Let's look at the variants of their usage.
 
 1. <strong>Simplest (and most popular) using</strong>
-<br>Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong><br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page. When one of the voting buttons pressed, this form will disappear, and voting result will be shown instead.<br><br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will just show the current article rating.<br><br>If you have administrative privileges, then, while browsing through your articles, you will see near each voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow admins to see the list of all votes for this subject.<br><br>That's all you need to know about simplest using of the Simple Voting plugin.
+<br>
+<br>Just insert in your article or page this simple shortcode:
+<br><strong>[voting]</strong>
+<br>
+<br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page.
+When one of the voting buttons pressed, this form will disappear, and current article rating will be shown instead.
+<br>
+<br>You can also use another shortcode:
+<br><strong>[voted]</strong>
+<br>This shortcode will just show the current article rating.
+<br>
+<br>If you have administrative privileges, then, while browsing through your articles, you will see near each
+voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow
+admins to see the list of all votes for this subject.
+<br>
+<br>That's all you need to know about simplest using of the Simple Voting plugin.
+<br>
 2. <strong>Voting for arbitrary subjects</strong>
+<br>
 <br>If you want to allow your visitors to vote for an arbitrary subject, you must use more complex shortcode
 construction, like this:
 <br><strong>[voting]Arbitrary subject name[/voting]</strong>
-<br>Such block of code could be placed in any article, and will rate the same 'Arbitrary subject name'.
-<br>To show the rating of the 'Arbitrary subject name', use following shortcode:
+<br>
+<br>Such block of code could be placed in any article, and will rate the same <strong>'Arbitrary subject name'</strong>.
+<br>To show the rating of the <strong>'Arbitrary subject name'</strong>, use following shortcode:
 <br><strong>[voted]Arbitrary subject name[/voted]</strong>
-3. Voting with redirection (for experienced webmasters). 
-
-Immediately after voting, visitor (and information about his vote) could be sent to another web page.
-Just include URL of desired page somewhere in the subject name.
-Let's imagine, that after voting, you want to send visitor to the URL http://somesite.com/somepage.php
-To accomplish this, you must write something like this:
-
-[voting]http://somesite.com/somepage.php Subject name[/voting]
-
-Or something like this:
-
-[voting]
-Another
-subject
-http://somesite.com/somepage.php
-[/voting]
-
-Or just that:
-
-[voting]http://somesite.com/somepage.php[/voting]
-
-Note that although in all these examples I used same URL (http://somesite.com/somepage.php),  they are
+<br>
+<br>
+3. <strong>Voting with redirection (for experienced webmasters)</strong>
+<br>
+<br>Immediately after voting, visitor (and information about his vote) could be sent to another web page.
+<br>Just include URL of desired page somewhere in the subject name.
+<br>Let's imagine, that after voting, you want to send visitor to the URL http://somesite.com/somepage.php
+<br>To do so, you must write something like this:
+<br><strong>[voting]http://somesite.com/somepage.php Subject name[/voting]</strong>
+<br>
+<br>Or something like this:
+<br><strong>
+<br>[voting]
+<br>Another
+<br>subject
+<br>http://somesite.com/somepage.php
+<br>[/voting]
+<br></strong>
+<br>
+<br>Or just that:
+<br>
+<br><strong>[voting]http://somesite.com/somepage.php[/voting]</strong>
+<br>
+<br>Note that although in all these examples I used same URL (http://somesite.com/somepage.php),  they are
 DIFFERENT voting subjects, because texts inside shortcode tags are different.
-
-Note. To show the rating of the subjects from above examples, you must use [voted] shortcode instead
-of [voting] one. Like this:
-
-[voted]http://somesite.com/somepage.php Subject name[/voted]
-
-[voted]
-Another
-subject
-http://somesite.com/somepage.php
-[/voted]
-
-[voted]http://somesite.com/somepage.php[/voted]
-
-After voting on any of these subjects, user will be sent to the given web page
+<br>
+<br>Note. To show the rating of the subjects from above examples, you must use <strong>[voted]</strong> shortcode
+instead of <strong>[voting]</strong> one. Like this:
+<br>
+<br><strong>[voted]http://somesite.com/somepage.php Subject name[/voted]</strong>
+<br>
+<br><strong>[voted]
+<br>Another
+<br>subject
+<br>http://somesite.com/somepage.php
+<br>[/voted]</strong>
+<br>
+<br><strong>[voted]http://somesite.com/somepage.php[/voted]</strong>
+<br>
+<br>After voting on any of these subjects, user will be sent to the given web page
 (http://somesite.com/somepage.php in our examples). To this page also will be POSTed data, containing
 following information about voting subject:
-
-sv_vote – user’s vote (from 1 to 10)
-sv_textID – unique subject identifier, which consists of three letters, concatenated with a numeric ID.
-svUserName – user name
-svUserEmail – user’s Email
-svUserComment – user’s comment
-sv_nonce – one time code, generated by the function: wp_create_nonce( 'simple-voting' ). This code used for security purposes, but you may ignore it.
-
-4. Database tables.
-
-Simple voting plugin stores all information in two database tables:
-<strong>
+<br>
+<br><strong>sv_vote</strong> – user’s vote (from 1 to 10)
+<br><strong>sv_textID</strong> – unique subject identifier, which consists of three letters and numeric ID.
+<br><strong>svUserName</strong> – user name
+<br><strong>svUserEmail</strong> – user’s Email
+<br><strong>svUserComment</strong> – user’s comment
+<br><strong>sv_nonce</strong> – one time code, generated by the function: wp_create_nonce( 'simple-voting' ).
+This code used for security purposes, but you may ignore it.
+<br>
+<br>
+4. <strong>Database tables</strong>
+<br>
+<br>Simple voting plugin stores all information in two database tables:
+<br><strong>
 </br>{db_prefix}simple_voting_subjects
 </br>{db_prefix}simple_voting_votes
-</strong>
-
-That’s all. Fill free to to ask any questions: seoringer@gmail.com
+<br></strong>
+<br>
+<br>That’s all. Fill free to to ask any questions: seoringer@gmail.com
 
 == Installation ==
 
@@ -92,4 +113,4 @@ This section describes how to install the plugin and get it working.
 
 1. Upload `simple-voting` plugin to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Place `[voting]` shortcode in your article or page (for more detail see Description)
+3. Place `[voting]` shortcode in your article or page (for more details see Description)

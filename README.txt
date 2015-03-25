@@ -13,9 +13,11 @@ Simple voting and rating system. In simplest case you just need to insert in you
 == Description ==
 
 This plugin can understand two shortcodes: <strong>[voting]</strong> and <strong>[voted]</strong>.
-<br/>Let's look at the variants of their usage.
+<br>Let's look at the variants of their usage.
 
-1. Simplest (and most popular) using.
+<ol>
+<li>
+<strong>Simplest (and most popular) using.</strong>
 
 Just insert in your article or page this simple shortcode:
 

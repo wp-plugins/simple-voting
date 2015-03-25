@@ -12,10 +12,12 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 == Description ==
 
-This plugin can understand two shortcodes: 
+This plugin can understand two shortcodes:
+ 
 * [voting]</strong>
 * [voted]</strong>
 
+<br>
 Let's look at the variants of their usage.
 
 1. <strong>Simplest (and most popular) using</strong>
@@ -104,6 +106,14 @@ following information about voting subject:
 <br></strong>
 <br>
 <br>That’s all. Fill free to to ask any questions: seoringer@gmail.com
+
+== Screenshots ==
+
+1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
+the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
+directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
+(or jpg, jpeg, gif).
+2. This is the second screen shot
 
 == Installation ==
 

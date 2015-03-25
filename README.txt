@@ -14,25 +14,20 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 This plugin can understand two shortcodes: 
 
-*<strong>[voting]</strong>
-*<strong>[voted]</strong>
+* <strong>[voting]</strong>
+* <strong>[voted]</strong>
 
 Let's look at the variants of their usage.
 
-1. Simplest (and most popular) using.
-Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong><br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page. When one of the voting buttons pressed, this form will disappear, and voting result will be shown instead.<br><br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will just show the current article rating.<br><br>If you have administrative privileges, then, while browsing through your articles, you will see near each voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow admins to see the list of all votes for this subject.<br><br>That's all you need to know about simplest using of the Simple Voting plugin.
+1. <strong>Simplest (and most popular) using</strong>
+<br>Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong><br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page. When one of the voting buttons pressed, this form will disappear, and voting result will be shown instead.<br><br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will just show the current article rating.<br><br>If you have administrative privileges, then, while browsing through your articles, you will see near each voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow admins to see the list of all votes for this subject.<br><br>That's all you need to know about simplest using of the Simple Voting plugin.
 2. <strong>Voting for arbitrary subjects</strong>
-
-If you want to allow your visitors to vote for an arbitrary subject, you must use more complex shortcode
+<br>If you want to allow your visitors to vote for an arbitrary subject, you must use more complex shortcode
 construction, like this:
-
-<strong>[voting]Arbitrary subject name[/voting]</strong>
-
-Such block of code could be placed in any article, and will rate the same 'Arbitrary subject name'.
-To show the rating of the 'Arbitrary subject name', use following shortcode:
-
-[voted]Arbitrary subject name[/voted]
-
+<br><strong>[voting]Arbitrary subject name[/voting]</strong>
+<br>Such block of code could be placed in any article, and will rate the same 'Arbitrary subject name'.
+<br>To show the rating of the 'Arbitrary subject name', use following shortcode:
+<br><strong>[voted]Arbitrary subject name[/voted]</strong>
 3. Voting with redirection (for experienced webmasters). 
 
 Immediately after voting, visitor (and information about his vote) could be sent to another web page.

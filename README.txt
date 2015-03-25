@@ -19,7 +19,10 @@ This plugin can understand two shortcodes:
 
 Let's look at the variants of their usage.
 
-1. = Simplest (and most popular) using = <br>Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong><br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page. When one of the voting buttons pressed, this form will disappear, and voting result will be shown instead.<br><br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will just show the current article rating.<br><br>If you have administrative privileges, then, while browsing through your articles, you will see near each voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow admins to see the list of all votes for this subject.<br><br>That's all you need to know about simplest using of the Simple Voting plugin.
+1. 
+= Simplest (and most popular) using =
+<br>Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong>
+<br>This shortcode will be replaced with a voting form, which allow your visitors to rate current article or page. When one of the voting buttons pressed, this form will disappear, and voting result will be shown instead.<br><br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will just show the current article rating.<br><br>If you have administrative privileges, then, while browsing through your articles, you will see near each voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow admins to see the list of all votes for this subject.<br><br>That's all you need to know about simplest using of the Simple Voting plugin.
 2. <strong>Voting for arbitrary subjects</strong>
 
 If you want to allow your visitors to vote for an arbitrary subject, you must use more complex shortcode

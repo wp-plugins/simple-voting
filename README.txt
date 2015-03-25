@@ -12,31 +12,14 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 == Description ==
 
-This plugin can understand two shortcodes: <strong>[voting]</strong> and <strong>[voted]</strong>.
-<br>Let's look at the variants of their usage.
+This plugin can understand two shortcodes: 
+* <strong>[voting]</strong>
+* <strong>[voted]</strong>
 
-<ol>
-<li>
-<strong>Simplest (and most popular) using.</strong>
+Let's look at the variants of their usage.
 
-Just insert in your article or page this simple shortcode:
-
-<strong>[voting]</strong>
-
-This shortcode will be replaced with a voting form. This voting form will allow your visitors to rate current
-article or page. It is a simplest and easiest way to use Simple Voting plugin.
-<br/>You can also use another shortcode:
-
-<strong>[voted]</strong>
-
-This shortcode will show current article rating.
-
-If you have administrative priviliges, then, while browsing through your articles, you will see near each voting
-form the button with a title 'You are admin. Check answers'. This button will allow admins to see the list of all votes for this subject.
-
-That's all you need to know about simplest using of the Simple Voting plugin.
-
-2. Voting for arbitrary subjects.
+1. <strong>Simplest (and most popular) using</strong><br>Just insert in your article or page this simple shortcode:<br><strong>[voting]</strong><br>This shortcode will be replaced with a voting form. This voting form will allow your visitors to rate current article or page. It is a simplest and easiest way to use Simple Voting plugin.<br>You can also use another shortcode:<br><strong>[voted]</strong><br>This shortcode will show current article rating.<br>If you have administrative priviliges, then, while browsing through your articles, you will see near each voting form the button with a title 'You are admin. Check answers'. This button will allow admins to see the list of all votes for this subject.<br>That's all you need to know about simplest using of the Simple Voting plugin.
+2. <strong>Voting for arbitrary subjects</strong>
 
 If you want to allow your visitors to vote for an arbitrary subject, you must use more complex shortcode
 construction, like this:

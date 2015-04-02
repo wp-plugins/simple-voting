@@ -12,8 +12,10 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 == Description ==
 
-Plugin has a Russian translation.
 You can see a demo examples at [Seoringer.com](http://seoringer.com/simple-voting-plugin-for-wordpress/ "simple voting plugin for WordPress").
+Plugin has a Russian translation.
+
+Any questions and bug reports are welcomed at seoringer@gmail.com
 
 This plugin can understand two shortcodes:
  

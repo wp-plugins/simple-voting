@@ -12,26 +12,30 @@ Last Update: June 29th, 2015
 	margin-left: auto;
 	margin-right: auto;
 	width: 350px;
-	}
-
-.text-input-_-simple-voting {
-	width: 330px;
 }
 
-.user-comment-_-simple-voting { height: 70px; }
+.voting-area-_-simple-voting:after {
+  content: '\A';
+  white-space: pre;
+}
 
-label.text-label-_-simple-voting { width: 330px; font-weight: bold; text-align: left; padding: 3px; }
-.mandatory { color: red; text-weigth: bold; }
+.user-data-_-simple-voting .text-input-_-simple-voting { width: 100%; }
 
-.text-label-alarm-_-simple-voting {
+.user-data-_-simple-voting .user-comment-_-simple-voting { height: 70px; }
+
+.user-data-_-simple-voting label.text-label-_-simple-voting { width: 100%; font-weight: bold; text-align: left; padding: 3px; }
+
+.user-data-_-simple-voting .mandatory { color: red; text-weigth: bold; }
+
+.user-data-_-simple-voting .text-label-alarm-_-simple-voting {
     outline: none !important;
     border:2px solid red;
     box-shadow: 0 0 10px #719ECE;
 }
 
 /* Voting Numbers */
-.voting-area-_-simple-voting span.voting-element-_-simple-voting { display: inline-block; }
-.voting-area-_-simple-voting span.voting-element-_-simple-voting a { border: 1px solid yellow; color: black; display: inline-block; font-size: 14px; padding: 4px 10px; text-decoration: none; }
+.voting-area-_-simple-voting span.voting-element-_-simple-voting { display: inline-block; float: left; width: 10%; }
+.voting-area-_-simple-voting span.voting-element-_-simple-voting a { border: 1px solid yellow; color: black; display: inline-block; font-size: 14px; line-height: 2; width: 100%; text-decoration: none; }
 .voting-area-_-simple-voting span.voting-element-_-simple-voting a:hover { border: 1px solid blue; color: white; text-decoration: none; }
 
 /* Minor adjustments */
@@ -39,7 +43,7 @@ label.text-label-_-simple-voting { width: 330px; font-weight: bold; text-align: 
 #svFinalRating { font-size: 14px;	font-weight: bold; }
 
 /* Voting buttons gradient */
-span.voting-element-_-simple-voting { 
+.voting-area-_-simple-voting span.voting-element-_-simple-voting { 
 /* Followig 8 lines got from the http://www.colorzilla.com/gradient-editor/ */
 background: #f9e43e; /* Old browsers */
 background: -moz-linear-gradient(top,  #f9e43e 0%, #f4af00 100%); /* FF3.6+ */
@@ -66,11 +70,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83e389', end
 
 
 /* Result gradient 1 */
-.voting-result-worst-_-simple-voting {
+.voting-area-_-simple-voting .voting-result-worst-_-simple-voting {
 	background: #ED5A5A;
 }
 /* Result gradient 2 */
-.voting-result-bad-_-simple-voting {
+.voting-area-_-simple-voting .voting-result-bad-_-simple-voting {
 /* Followig 8 lines got from the http://www.colorzilla.com/gradient-editor/ */
 background: #8bf26f; /* Old browsers */
 background: -moz-linear-gradient(left,  #8bf26f 0%, #ed5a5a 19%); /* FF3.6+ */
@@ -82,7 +86,7 @@ background: linear-gradient(to right,  #8bf26f 0%,#ed5a5a 19%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bf26f', endColorstr='#ed5a5a',GradientType=1 ); /* IE6-9 */
 }
 /* Result gradient 3 */
-.voting-result-average-_-simple-voting {
+.voting-area-_-simple-voting .voting-result-average-_-simple-voting {
 /* Followig 8 lines got from the http://www.colorzilla.com/gradient-editor/ */
 background: #8bf26f; /* Old browsers */
 background: -moz-linear-gradient(left,  #8bf26f 0%, #ed5a5a 100%); /* FF3.6+ */
@@ -94,7 +98,7 @@ background: linear-gradient(to right,  #8bf26f 0%,#ed5a5a 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bf26f', endColorstr='#ed5a5a',GradientType=1 ); /* IE6-9 */
 }
 /* Result gradient 4 */
-.voting-result-good-_-simple-voting {
+.voting-area-_-simple-voting .voting-result-good-_-simple-voting {
 /* Followig 8 lines got from the http://www.colorzilla.com/gradient-editor/ */
 background: #8bf26f; /* Old browsers */
 background: -moz-linear-gradient(left,  #8bf26f 75%, #ed5a5a 100%); /* FF3.6+ */
@@ -106,5 +110,5 @@ background: linear-gradient(to right,  #8bf26f 75%,#ed5a5a 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bf26f', endColorstr='#ed5a5a',GradientType=1 ); /* IE6-9 */
 }
 /* Result gradient 5 */
-.voting-result-best-_-simple-voting { background: #8BF26F; /* Old browsers */
+.voting-area-_-simple-voting .voting-result-best-_-simple-voting { background: #8BF26F; /* Old browsers */
 }

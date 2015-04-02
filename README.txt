@@ -12,6 +12,9 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 == Description ==
 
+Plugin has a Russian translation.
+You can see a demo examples at [Seoringer.com](http://seoringer.com/simple-voting-plugin-for-wordpress/ "simple voting plugin for WordPress").
+
 This plugin can understand two shortcodes:
  
 * <strong>[voting]</strong>
@@ -32,11 +35,11 @@ When one of the voting buttons pressed, this form will disappear, and current ar
 <br><strong>[voted]</strong>
 <br>This shortcode will just show the current article rating.
 <br>
-<br>If you have administrative privileges, then, while browsing through your articles, near each
-voting form you will see the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow
-admins to see the list of all votes for this subject.
+<br>If you have administrative privileges, then, while browsing through your articles, you will see near each
+voting form the button with a title <strong>'You are admin. Check answers'</strong>. This button will allow
+admins to see the detailed list of all votes for this subject.
 <br>
-<br>That's all you need to know about simplest using of the Simple Voting plugin.
+<br>That's all you need to know about simplest way of using the Simple Voting plugin.
 <br>
 <br>
 2. <strong>Voting for arbitrary subjects</strong>
@@ -45,27 +48,27 @@ admins to see the list of all votes for this subject.
 construction, like this:
 <br><strong>[voting] Arbitrary subject name [/voting]</strong>
 <br>
-<br>Such block of code could be placed in any article, and will rate the same <strong>'Arbitrary subject name'</strong>.
+<br>Such block of code could be placed in any article, and will rate the <strong>'Arbitrary subject name'</strong>.
 <br>To show the rating of the <strong>'Arbitrary subject name'</strong>, use following shortcode:
 <br><strong>[voted] Arbitrary subject name [/voted]</strong>
 <br>
 <br>
 3. <strong>Voting with redirection (for experienced webmasters)</strong>
 <br>
-<br>Immediately after voting, visitor (and information about his vote) could be sent to another web page.
-Just include desired URL somewhere in the subject name.
+<br>Immediately after voting, visitor (and information about his vote) could be sent to another web page - 
+just include desired URL somewhere in the subject's name.
 <br>
 <br>Let's imagine, that after voting, you want to send visitor to the URL http://somesite.com/somepage.php
 <br>To do so, you must write something like this:
 <br>
-<br><strong>[voting] http://somesite.com/somepage.php Subject name [/voting]</strong>
+<br><strong>[voting] Subject name http://somesite.com/somepage.php [/voting]</strong>
 <br>
 <br>Or something like this:
 <br>
 <br><strong>[voting]
 <br>Another
-<br>subject
 <br>http://somesite.com/somepage.php
+<br>subject
 <br>[/voting]</strong>
 <br>
 <br>Or just that:
@@ -75,15 +78,15 @@ Just include desired URL somewhere in the subject name.
 <br>Note that although in all these examples I used same URL (http://somesite.com/somepage.php),  they are
 DIFFERENT voting subjects, because texts inside shortcode tags are different.
 <br>
-<br>To show the rating of the subjects from above examples, you must use <strong>[voted]</strong> shortcode
+<br>If, on some pages, you want to show just a rating of the subjects from above examples, you must use <strong>[voted]</strong> shortcode
 instead of <strong>[voting]</strong> one. Like this:
 <br>
-<br><strong>[voted] http://somesite.com/somepage.php Subject name [/voted]</strong>
+<br><strong>[voted] Subject name http://somesite.com/somepage.php [/voted]</strong>
 <br>
 <br><strong>[voted]
 <br>Another
-<br>subject
 <br>http://somesite.com/somepage.php
+<br>subject
 <br>[/voted]</strong>
 <br>
 <br><strong>[voted] http://somesite.com/somepage.php [/voted]</strong>

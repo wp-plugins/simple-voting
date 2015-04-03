@@ -39,7 +39,17 @@ Last Update: June 29th, 2015
 .voting-area-_-simple-voting span.voting-element-_-simple-voting a:hover { border: 1px solid blue; color: white; text-decoration: none; }
 
 /* Minor adjustments */
-#svVotingLabel { padding-bottom: 5px; }
+.voting-label-_-simple-voting:after {
+  content: '\A';
+  white-space: pre-wrap;
+  padding-bottom: 5px;
+}
+.voting-label-_-simple-voting {
+  padding-bottom: 5px;
+  white-space: pre-wrap;
+}
+
+
 #svFinalRating { font-size: 14px;	font-weight: bold; }
 
 /* Voting buttons gradient */

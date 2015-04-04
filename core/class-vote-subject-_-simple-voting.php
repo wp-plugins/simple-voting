@@ -162,9 +162,9 @@ adminHTML;
 		}
 		
 		return( implode( array(
-			"<div class='voting-result-{$resultClassSuffix}-_-simple-voting'>",
-				__("Rating", "simple-voting")." <span id='svFinalRating'>{$votingResult}</span>",
-				" (" . __("out of", "simple-voting") . " {$this->getVotesCount()} " . __("votes", "simple-voting").")",
+			"<div class='voting-result-_-simple-voting voting-result-{$resultClassSuffix}-_-simple-voting'>",
+				"{$votingResult}<span class='resulting-space-_-simple-voting'>span</span>({$this->getVotesCount()} ",
+				"<span class='resulting-men-_-simple-voting'>voters</span>)",
 			"</div>",
 			$this->getAdminHtmlCode()
 		) )	);

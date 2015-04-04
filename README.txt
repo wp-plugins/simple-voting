@@ -14,10 +14,6 @@ Simple voting and rating system. In simplest case you just need to insert in you
 
 You can see a demo examples at [Seoringer.com](http://seoringer.com/simple-voting-plugin-for-wordpress/ "simple voting plugin for WordPress").
 
-Plugin will take translation from your WordPress installation, based on the locale of your site. So, if you have 
-German-localized WordPress with de_DE site locale, plugin will show German labels, if your WordPress is 
-Russian-localized with ru_RU locale, plugin will show Russian labels, and so on.
-
 Any questions and bug reports are welcomed at seoringer@gmail.com
 
 This plugin can understand two shortcodes:

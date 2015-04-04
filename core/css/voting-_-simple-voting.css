@@ -19,13 +19,26 @@ Last Update: June 29th, 2015
   white-space: pre;
 }
 
-.user-data-_-simple-voting .text-input-_-simple-voting { width: 100%; }
+.user-data-_-simple-voting .text-input-_-simple-voting {
+	width: 100%;
+	padding-left: 33px;
+	margin-bottom: 15px;
+	background-position: 4px 8px;
+	background-repeat:  no-repeat;
+}
 
-.user-data-_-simple-voting .user-comment-_-simple-voting { height: 70px; }
+.user-data-_-simple-voting .user-name-_-simple-voting {
+	background-image:url(../../images/user.png);
+}
 
-.user-data-_-simple-voting label.text-label-_-simple-voting { width: 100%; font-weight: bold; text-align: left; padding: 3px; }
+.user-data-_-simple-voting .user-email-_-simple-voting {
+	background-image:url(../../images/mail.png);
+}
 
-.user-data-_-simple-voting .mandatory { color: red; text-weigth: bold; }
+.user-data-_-simple-voting .user-comment-_-simple-voting {
+	height: 100px;
+	background-image:url(../../images/comments.png);
+}
 
 .user-data-_-simple-voting .text-label-alarm-_-simple-voting {
     outline: none !important;
@@ -38,19 +51,24 @@ Last Update: June 29th, 2015
 .voting-area-_-simple-voting span.voting-element-_-simple-voting a { border: 1px solid yellow; color: black; display: inline-block; font-size: 14px; line-height: 2; width: 100%; text-decoration: none; }
 .voting-area-_-simple-voting span.voting-element-_-simple-voting a:hover { border: 1px solid blue; color: white; text-decoration: none; }
 
-/* Minor adjustments */
-.voting-label-_-simple-voting:after {
-  content: '\A';
-  white-space: pre-wrap;
-  padding-bottom: 5px;
-}
-.voting-label-_-simple-voting {
-  padding-bottom: 5px;
-  white-space: pre-wrap;
+.voting-area-_-simple-voting .voting-result-_-simple-voting {
+	font-size: 140%;
 }
 
+.voting-area-_-simple-voting span.resulting-space-_-simple-voting {
+	display: inline-block;
+	text-indent: -10000px;
+	width: 20px;
+}
 
-#svFinalRating { font-size: 14px;	font-weight: bold; }
+.voting-area-_-simple-voting span.resulting-men-_-simple-voting {
+	display: inline-block;
+	text-indent: -10000px;
+	width: 26px;
+	background-image:url(../../images/user.png);
+	background-position: 50% 50%;
+	background-repeat:  no-repeat;
+}
 
 /* Voting buttons gradient */
 .voting-area-_-simple-voting span.voting-element-_-simple-voting { 

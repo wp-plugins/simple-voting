@@ -124,13 +124,6 @@ class Shortcode_Processor___Simple_Voting {
             
 			$plugin_url = plugin_dir_url( dirname( __FILE__ ) );
 			
-			$userNameLabel = __("Please enter a username." );
-			if( "Please enter a username." == $userNameLabel ) $userNameLabel = __("Your name:", "simple-voting");
-			$userCommentLabel = __("Your Comment" );
-			if( "Your Comment" == $userCommentLabel ) $userCommentLabel = __("Comments:", "simple-voting");
-			//$ratingLabel = __("Please rate:", "simple-voting");
-			$ratingLabel = " ";
-			
 			$svNonce = wp_create_nonce( "simple-voting" );
 			
 			$result .= <<<svHtml_part1
@@ -144,21 +137,17 @@ class Shortcode_Processor___Simple_Voting {
 						
 						<div class="user-data-_-simple-voting">
 							<DIV name="svUserNameGroup">
-								<label name="sv-user-name-label" class="text-label-_-simple-voting"><span class="mandatory">*</span>{$userNameLabel}</label>
-								<input name="svUserName" class="text-input-_-simple-voting" type="text"></input>
+								<input name="svUserName" class="text-input-_-simple-voting user-name-_-simple-voting" type="text"></input>
 							</DIV>
 							<DIV name="svUserEmailGroup">
-								<label name="sv-user-email-label" class="text-label-_-simple-voting"><span class="mandatory">*</span>Email:</label>
-								<input name="svUserEmail" class="text-input-_-simple-voting" type="email"></input>
+								<input name="svUserEmail" class="text-input-_-simple-voting user-email-_-simple-voting" type="email"></input>
 							</DIV>
 							<DIV>
-								<label name="sv-user-comment-label" class="text-label-_-simple-voting">{$userCommentLabel}</label>
 								<textarea name="svUserComment" class="text-input-_-simple-voting user-comment-_-simple-voting"></textarea>
 							</DIV>
 						</div>
 					</form>
 					<div name="svVotingGroup">
-						<div class='voting-label-_-simple-voting'>{$ratingLabel}</div>
 						<div name="svVotingElements">
 svHtml_part1;
 			
